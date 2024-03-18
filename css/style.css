@@ -20,6 +20,10 @@ a {
 
 /* STYLE */
 
+.info {
+    display: flex;
+}
+
 /* UTILITIES */
 
 /* DEBUG */

@@ -36,3 +36,19 @@ const membriTeam = [
         foto: 'barbara-ramos-graphic-designer.jpg',
     }
 ];
+
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+for (let i = 0; i < membriTeam.length; i++){
+    membroCorrente = membriTeam[i];
+    console.log(membroCorrente.nome, membroCorrente.lavoro, membroCorrente.foto);
+
+    const container = document.querySelector('.container');
+    const div = document.createElement('div');
+    div.className = 'col-4';
+    container.append(div);
+    div.innerHTML = `${membroCorrente.nome}, ${membroCorrente.lavoro}, ${membroCorrente.foto}`;
+}
+
+// Stampare le stesse informazioni su DOM semplicemente come stringhe
+
